@@ -1,0 +1,124 @@
+body,h1,h2,h3,h4,p,a {
+  font-size: 100%;
+  font-weight:normal;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  padding: 2px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color:whitesmoke;
+}
+.header{
+  height: 140vh;
+  background-image: url("https://avatars.mds.yandex.net/get-zen_doc/49107/pub_5d7538d20ce57b00afde3b2c_5d7538eaa3f6e400ac007b73/scale_1200");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .1);
+  display:flex;
+}
+nav{
+  margin: auto;
+  width: 420px;
+  height: 100px;
+}
+.topnav{
+  background-color:whitesmoke;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.topnav a{
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+.topnav a:hover{
+  border-bottom: 2px solid #000000;
+}
+@media screen and (max-width: 768px){
+  .topnav a:not(:first-child){
+      display: none;
+  }
+  .topnav a.icon{
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #000000;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+  }
+  .topnav.responsive{
+    position: relative;
+  }
+  .topnav.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.content{
+  font-size: 0;
+  width:790px;
+  margin:100px auto 50px;
+}
+.card{
+  display: inline-block;
+  margin-right:90px;
+  width:350px;
+  margin-bottom:60px;
+  padding:45px 45px 70px 45px;
+  box-shadow: 4px 4px 5px rgba(172, 45, 45, 0.4)
+  /*border:2px solid rgba(250,50,50, 0.4)*/
+}
+.no-right-margin{
+  margin-right: 0;
+}
+.card-title{
+  font-weight:500;
+  font-size:24px;
+  margin-bottom:10px;
+}
+.card-text{
+  font-size:16px;
+}
+.card-image{
+  width:100%;
+  margin-bottom:25px; 
+  max-width: 100%;
+}
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  text-align: center;
+  padding: 25px;
+}
+.logo{
+  width: 35%;
+  height: 35%;
+}
+footer a{
+  color:white;
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+footer nav a:hover{
+  border-bottom: 1px solid white;
+}
